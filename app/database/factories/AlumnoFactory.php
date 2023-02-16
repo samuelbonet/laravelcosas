@@ -20,7 +20,7 @@ class AlumnoFactory extends Factory
         $letra=chr(ord('A')+ $dni%23);
         return [
             'nombre' => fake()->name(),
-            'apellio'=>fake()->lastName(),
+            'apellido'=>fake()->lastName(),
             'direccion'=>fake()->address(),
             'dni'=>"$dni-$letra",
             //
